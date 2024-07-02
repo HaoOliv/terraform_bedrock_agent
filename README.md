@@ -13,4 +13,32 @@ This sample solution demonstrates the implementation of an Amazon Bedrock Agent 
 - [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started) installed.
 
 ## Architecture Overview
-![Architecure Image] (https://gitlab.aws.dev/olivha/terraform_bedrock_agent/-/blob/main/Bedrock_Agent.jpg)
+![Temp](image/Bedrock Agent.jpg)
+
+## Implemantation
+
+### Step 1: Clone this repository.
+```
+git@ssh.gitlab.aws.dev:olivha/terraform_bedrock_agent.git
+```
+
+### Step 2: Initialise the directory.
+```
+terraform init
+```
+
+### Step 3: Apply infrastructure.
+```
+terraform apply
+```
+
+## Validation
+* Login to AWS account 
+* Navigate to CloudFormation from console and verify that resources were created successfully
+
+## (Optional) Clean up the infrastructure 
+* Enter the following command to clean up
+```
+terraform destroy
+```
+
