@@ -13,7 +13,7 @@ This sample solution demonstrates the implementation of an Amazon Bedrock Agent 
 - [Terraform CLI](https://learn.hashicorp.com/tutorials/terraform/install-cli?in=terraform/aws-get-started) installed.
 
 ## Architecture Overview
-![Temp](image/Bedrock Agent.jpg)
+![Temp](https://github.com/HaoOliv/terraform_bedrock_agent/blob/main/image/Bedrock%20Agent.jpg)
 
 ## Implemantation
 
