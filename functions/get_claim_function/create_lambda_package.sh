@@ -1,0 +1,1 @@
+zip -r lambda_function.zip lambda_function.py

@@ -1,0 +1,46 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Insurance Claim statusAPI",
+    "version": "1.0.0",
+    "description": "API for getting the status of an insurance claim taking the claim ID as a parameter"
+  },
+  "paths": {
+    "/claims/{claimId}/gather-evidence": {
+      "post": {
+        "summary": "Gets status of an insurance policy claim",
+        "description": "Gets the status of the insurance policy given the claim ID",
+        "operationId": "getClaim",
+        "parameters": [
+          {
+            "name": "claimId",
+            "in": "path",
+            "description": "Unique ID of the open insurance claim",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns the insurance claim status",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "claimStatus": {
+                      "type": "string",
+                      "description": "Status of the claim"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
